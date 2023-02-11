@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* SECCIÓN DEL MENÚ */
+.contenedor_header {
+    background-color:  rgb(22, 22, 22);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor_header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor_header header .logo a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    color: rgb(7, 175, 197);
+    text-decoration: none;
+}
+.contenedor_header header ul {
+    display: flex;
+    list-style-type: none;
+}
+.contenedor_header header nav ul li a {
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5px;
+    text-decoration: none;
+}
+.contenedor_header header nav ul li a:hover {
+    color: rgb(7, 175, 197);
+}
+.nav_responsive {
+    background-color: rgb(7, 175, 197);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCIÓN DEL INICIO */
+.inicio {
+    background: linear-gradient(to top, rgba(0, 0, 0, .8), rgb(0, 0, 0, 1)),
+    url(fondo.jpg);
+    background-size: cover;
+    height: 120vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido_banner {
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    max-width: 360px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido_banner img{
+    margin-top: 40px;
+    border: 5px solid rgb(7, 175, 197);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido_banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Roboto Slab', serif;
+}
+.inicio .contenido_banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+.inicio .contenido_banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 42px;
+    margin: 30px 15px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido_banner .redes a:hover {
+    background-color: rgb(7, 175, 197);
+}
+
+/* SECCIÓN "SOBRE MI" */
+.sobremi {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido_seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido_seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido_seccion p span {
+    color: rgb(7, 175, 197);
+    font-weight: bold;
+}
+.sobremi .fila {
+    display: flex;
+}
+.sobremi .fila .col {
+    width: 50%;
+}
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul {
+    list-style: none;
+}
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: rgb(7, 175, 197);
+    width: 130px;
+}
+.sobremi .fila .col ul li span {
+    background-color: rgb(7, 175, 197);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor_hobbies {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor_hobbies .hobbies {
+    width: 130px;
+    height: 130px;
+    background-color: rgb(50, 50, 50, 1);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor_hobbies .hobbies:hover {
+    background-color: rgb(7, 175, 197);
+}
+.sobremi .fila .col .contenedor_hobbies .hobbies i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* SECCIÓN DE HABILIDADES */
+.habilidades {
+    background-color: rgba(12, 12, 12, .9);
+    color: #fff;
+    padding: 50px 20px;
+}
+.habilidades .contenido_seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2 {
+    font-size: 48px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding: 20px 0;
+}
+.habilidades .fila {
+    display: flex;
+}
+.habilidades .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 25px;
+}
+.habilidades .habilidad > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.habilidades .habilidad .barra_habilidad {
+    height: 8px;
+    width: 80%;
+    background-color: rgb(22, 22, 22);
+    position: relative;
+    margin-bottom: 30px;
+}
+.habilidades .habilidad .progreso {
+    background-color: rgb(7, 175, 197);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9px;
+}
+.habilidades .habilidad .barra_habilidad span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(7, 175, 197);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* ANIMACIÓN DE LAS BARRAS DE PROGRESO */
+.habilidades .habilidad .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+.habilidades .habilidad .html5 {
+    width: 0%;
+    animation: 2s html5 forwards;
+}
+@keyframes html5 {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.habilidades .habilidad .css3 {
+    width: 0%;
+    animation: 2s css3 forwards;
+}
+@keyframes css3 {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.habilidades .habilidad .photoshop {
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.habilidades .habilidad .comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.habilidades .habilidad .trabajoenequipo {
+    width: 0%;
+    animation: 2s trabajoenequipo forwards;
+}
+@keyframes trabajoenequipo {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.habilidades .habilidad .manejodeprob {
+    width: 0%;
+    animation: 2s manejodeprob forwards;
+}
+@keyframes manejodeprob {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.habilidades .habilidad .manejodetiemp {
+    width: 0%;
+    animation: 2s manejodetiemp forwards;
+}
+@keyframes manejodetiemp {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+/* SECCIÓN ESTUDIOS */
+.estudios {
+    background-color: rgba(18, 18, 18, .9);
+    color: #fff;
+    padding: 50px 20px;
+}
+.estudios .contenido_seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.estudios h2 {
+    font-size: 48px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.estudios .fila {
+    display: flex;
+}
+.estudios .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+.estudios .fila .col h3 {
+    font-size: 29px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 25px;
+}
+.estudios .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: rgb(50, 50, 50, 1);
+}
+.estudios .fila .item .casa {
+    color: rgb(6, 165, 187);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.estudios .fila .item .fecha {
+    display: block;
+    color: rgb(7, 175, 197);
+    margin-bottom: 17px;
+}
+.estudios .fila .item p {
+    line-height: 24px;
+}
+.estudios .fila .izq {
+    border-right: 2px solid rgb(7, 175, 197);
+    margin-right: 20px;
+}
+.estudios .fila .der {
+    border-left: 2px solid rgb(7, 175, 197);
+    margin-left: 20px;
+}
+
+/* SECCIÓN FOOTER */
+footer {
+    background-color:  rgb(22, 22, 22);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes {
+    margin-bottom: 20px;
+}
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 42px;
+    margin: 30px 15px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .redes a:hover {
+    background-color: rgb(7, 175, 197);
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(7, 175, 197);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+/* SECCIÓN RESPONSIVE */
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+    .nav_responsive {
+        display: block;    
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgb(22, 22, 22);
+        width: 180px;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid rgb(7, 175, 197);
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+    .habilidades .fila {
+        display: block;
+    }
+    .habilidades .fila .col {
+        width: 100%;
+    }
+    .habilidades .fila .col .barra_habilidad {
+        width: 100%;
+    }
+
+    .estudios .fila {
+        display: block;
+    }
+    .estudios .fila .col {
+        width: 90%;
+    }
+    .estudios .fila .derecha {
+        margin-left: 20px;
+    }
+}

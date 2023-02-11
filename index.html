@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Curriculum vitae</title>
+</head>
+<body>
+    <!-- SECCION "ENCABEZADO" -->
+    <div class="contenedor_header">
+            <header>
+                <div class="logo">
+                    <a href="#">Mati</a>
+                </div>
+                <nav id="nav">
+                   <ul>
+                      <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                      <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                      <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                      <li><a href="#estudios" onclick="seleccionar()">ESTUDIOS</a></li>
+                 </ul>
+                </nav>
+                <div class="nav_responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+    </div>
+
+    <!-- SECCION "INICIO" -->
+    <section id="inicio" class="inicio">
+        <div class="contenido_banner">
+            <div class="contenedor_img">
+                <img src="perfil.webp" alt="foto de perfil">
+            </div>
+            <h1>MATIAS HEIDRICH</h1>
+            <h2>Programador - Experto en Aprender</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/matiasheidrich/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+543644373745" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/matias-heidrich" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION "SOBRE MI" -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido_seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola 👋, soy Matias Heidrich,</span> un estudiante del curso de programacion de Ticmas Academy y actualmente estoy en pleno desarrollo de mis habilidades. Esto lo hago porque queria probar cosas nuevas y me llamó mucho la atención el mundo del desarrollo web.</p>
+
+            <div class="fila">
+                <!-- Datos Personales jeje -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            02-04-06
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +54 3644-373745
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            matiasheidrich@gmail.com
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Argentina
+                        </li>
+                        <li>
+                            <strong>Ocupacion</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Hobbies jeje -->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor_hobbies">
+                        <div class="hobbies">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button> -->
+        </div>
+    </section>
+
+    <!-- SECCION "HABILIDADES" -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido_seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+
+                <!-- Habilidades Tecnicas -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="habilidad">
+                        <span>Javascript</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso javascript">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>HTML 5</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso html5">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>CSS 3</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso css3">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Photoshop</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso photoshop">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades Profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso comunicacion">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso trabajoenequipo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Manejo de Problemas</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso manejodeprob">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Manejo del Tiempo</span>
+                        <div class="barra_habilidad">
+                            <div class="progreso manejodetiemp">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION "ESTUDIOS" -->
+    <section id="estudios" class="estudios">
+        <div class="contenido_seccion">
+            <h2>Estudios</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h3>Preparatoria</h3>
+                        <h4><span class="casa">U.E.G.P Nº 24 "Colegio San José"</span>
+                        <span class="fecha">2011 - 2023</span></h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, cumque dignissimos distinctio obcaecati quisquam at vitae quam vel? Exercitationem ullam rem modi voluptatum est illum laborum repellat veritatis corporis doloremque?</p>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h3>Universidad</h3>
+                        <h4><span class="casa">UNCAus "Universidad Nacional del Chaco Austral"</span>
+                        <span class="fecha">2024 - 2029</span></h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, cumque dignissimos distinctio obcaecati quisquam at vitae quam vel? Exercitationem ullam rem modi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION "FOOTER" -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-angle-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/matiasheidrich/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/+543644373745" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/matias-heidrich" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
